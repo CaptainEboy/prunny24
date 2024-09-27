@@ -41,18 +41,6 @@ const HomePage = () => {
   if (!data?.launchesUpcoming) {
     return <div>No upcoming launches or invalid data.</div>;
   }
-
-  // const filteredLaunches = data.launchesUpcoming.filter((launch) =>
-  //   launch.mission_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  //   launch.launch_site.site_name_long.toLowerCase().includes(searchTerm.toLowerCase())
-  // );
-
-  // const filteredLaunches = data.launchesUpcoming.filter((launch) =>
-  //   launch.mission_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  //   launch.launch_site?.site_name_long?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-  //   launch.launch_site?.site_name_long ?? 'TBD').toLowerCase().includes(searchTerm.toLowerCase()
-  // );
-  
   
 
   const filteredLaunches = data.launchesUpcoming.filter((launch) =>
